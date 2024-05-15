@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: wineshop
+
+springdoc:
+  default-produces-media-type: application/json
+  swagger-ui:
+    tagsSorter: alpha
+
+client:
+  product:
+    url: ${PRODUCT_CLIENT_URL:https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com/produtos-mnboX5IPl6VgG390FECTKqHsD9SkLS.json}
+  customer:
+    url: ${CUSTOMER_CLIENT_URL:https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com/clientes-Vz1U6aR3GTsjb3W8BRJhcNKmA81pVh.json}
